@@ -150,7 +150,7 @@ display: inline-block;
 
 #content .section-heading {
     font-size: 30px;
-    margin-top: 40px;
+    margin-top: 72px;
     font-weight: 530;
     text-align: center;
     letter-spacing: 3px;
@@ -158,12 +158,12 @@ display: inline-block;
 }
 #content .section-hd{
     font-size: 30px;
-    padding: 60px;
-    margin-bottom: -53px;
+    padding: 72px;
+    margin-bottom: -62px;
     font-weight: 530;
     text-align: center;
     letter-spacing: 3px;
-    margin-top: 60px;
+    margin-top: 92px;
     
 }
 
@@ -243,7 +243,7 @@ background-color: #000;
     margin-top: 32px;
     margin-left: -11px;
     margin-right: -36px;
-    padding-bottom: 120px;;
+    padding-bottom: 90px;;
 }
 
 .place-item {
@@ -305,7 +305,7 @@ background-color: #000;
 
 .contact-content {
     margin-top: 47px;
-    padding-bottom: 500px;
+    padding-bottom: 95px;
 }
 
 .contact-info {
@@ -346,10 +346,44 @@ background-color: #000;
     border-radius: 4px;
     cursor: pointer;
 }
+.picture-end img {
+    width: 100%;
+    
+}
 
 #footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .sosials-list {
+    font-size: 24px;
+    padding : 10px;
 
 }
+
+#footer .sosials-list a {
+    color: #6E6E6E;
+   
+    text-decoration: none;
+    
+}
+
+#footer .sosials-list a:hover {
+    
+    color:#BDBDBD;
+}
+#footer .coppy-right {
+    color: #6E6E6E;
+    
+}
+#footer .coppy-right a {
+    color: #6E6E6E;
+    text-decoration: none;
+}
+
+
+
 /*  comon */
 .text-white {
     color: #fff !important;
