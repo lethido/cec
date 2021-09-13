@@ -6,6 +6,7 @@
     <title>Một cái Wed-Simple</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="themify-icons/themify-icons.css">
+    <link rel="icon" href="https://img.icons8.com/nolan/50/co2.png" type="image/x-icon">
 </head>
 <body>
     
@@ -50,7 +51,7 @@
         <div  class="content-section">
             <h2 class="section-heading">DO DINH</h2>
             <p class="section-sub-heading">Luon Vui Tuoi</p>
-            <p class="about-text">Thằng Đỏ Sinh năm 2004 , quê ở Quảng Trị. thằng này nó rất bà trợn, đi xe thì nẹt bô mà nó cứ tưởng ngầu. Đã thế hoc thì ngu, năm nào cũng được học sinh giỏi :)) . tôi rất nể thằng này. hình như nó mới ưng bé nào ở cam lộ mà mấy ngày nay thì không thấy xuất hiện ở trên fb nữa.ai đang ế thì ib nó mà ấy ấy ấy nhé :> love</p>
+            <p class="about-text">Thằng Đỏ Sinh năm 2004 , quê ở Quảng Trị. thằng này nó rất bà trợn, đi xe thì nẹt bô mà nó cứ tưởng ngầu. Đã thế hoc thì ngu, năm nào cũng được học sinh giỏi :)) . tôi rất nể thằng này. nghe bảo nó đang . hình như nó mới ưng bé nào ở cam lộ mà mấy ngày nay thì không thấy xuất hiện ở trên fb nữa.ai đang ế thì ib nó mà ấy ấy ấy nhé :> love</p>
             <div class="member-list">
                 <div class="member-item">
                     <p class="member-name">1</p>
@@ -170,9 +171,16 @@
             header.style.height= 'auto'
             
         }
-        else {header.style.height = '46px'}
+        else {header.style.height = null}
     }
+    var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
     //mobile-menu
+    for (var i = 0 ; i < menuItems.length; i++) {
+        var menuItem = menuItems[i];
+        menuItem.onclick = function() {
+           header.style.height = null;
+        }
+    }
     </script>
 </body>
 </html>

@@ -5,6 +5,7 @@
 }
 
 html {
+ scroll-behavior: smooth;
  font-family: Arial, Helvetica, sans-serif;
 }
 #main {
@@ -191,12 +192,7 @@ display: inline-block;
     margin-top:48px;
 }
 
-#content .member-item {
-    float: left;
-    width: 33.33333%;
-    text-align: center;
-    
-}
+
 
 #content .member-name{
     font-size: 15px;
@@ -204,7 +200,7 @@ display: inline-block;
     margin-bottom: 15px;
 }
 #content .member-img {
-    width: 200px;
+    width: 341px;
     border-radius: 10px;
 }
 
@@ -443,6 +439,12 @@ background-color: #000;
     display: block;
 
     }
+    #content .member-item {
+        float: left;
+        width: 33.33333%;
+        text-align: center;
+        
+    }
 }
 @media (min-width : 740px) and (max-width:1024px) {
     #content .about-text {
@@ -472,6 +474,12 @@ background-color: #000;
         
         
     }
+    #content .member-item {
+        float: left;
+        width: 33.33333%;
+        text-align: center;
+        
+    }
     
 }
 @media (max-width:740px) {
@@ -499,5 +507,34 @@ background-color: #000;
         background-color:  #ccc;
         color: #000;
         display: inline-block;
+    }
+    #content .about-text {
+        padding-left: 16px;
+    padding-right: 16px;
+    }
+    #content .member-item {
+        text-align: center;
+        padding: 40px;
+        
+    }
+    #content .section-hd{
+        margin-top: 43px;
+    }
+    .tickes-list{
+        margin-left: 16px;
+    margin-right: 16px;
+    }
+    .tickes-list .quantity {
+        margin-left: 258px;
+    }
+    .place-item {
+        float: left;
+    width: 86%;
+    padding-bottom: 27px;
+    margin-left: 20px;
+    }
+    .place-body {
+        margin-left: 11px;
+        margin-right: 11px;
     }
 }
