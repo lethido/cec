@@ -200,7 +200,7 @@ display: inline-block;
     margin-bottom: 15px;
 }
 #content .member-img {
-    width: 341px;
+    width: 200px;
     border-radius: 10px;
 }
 
@@ -536,5 +536,8 @@ background-color: #000;
     .place-body {
         margin-left: 11px;
         margin-right: 11px;
+    }
+    #content .member-img {
+        width: 400px;
     }
 }
