@@ -7,6 +7,10 @@
 html {
  font-family: Arial, Helvetica, sans-serif;
 }
+#main {
+    overflow: hidden;
+}
+
 
 #header {
  height: 46px;
@@ -16,6 +20,7 @@ html {
  left: 0;
  right: 0;
  z-index: 1;
+ overflow: hidden;
 }
 
 #nav, .subnav {
@@ -34,12 +39,10 @@ display: inline-block;
 
 #nav li {
     
-    position: relative;
-    
-
-    
-    
+    position: relative;  
 }
+
+
 
 
 #nav > li > a {
@@ -95,6 +98,7 @@ display: inline-block;
     float: right;
 
 }
+
 #header .search-icon {
         color: white;
         font-size: 20px;
@@ -115,7 +119,7 @@ display: inline-block;
     margin-top: 46px;
     padding-top: 50%;
     background: url('./anh/240260784_10157755623917282_2107976972124478584_n.jpg') top center / cover no-repeat;
-
+    ;
 }
 
 #slider .text-content {
@@ -141,7 +145,8 @@ display: inline-block;
 
 #content .content-section {
     width: 800px;
-    padding: 64 0px;
+    max-width: 100%;
+   padding: 0px;
     margin-left: auto;
     margin-right: auto;
     
@@ -188,7 +193,7 @@ display: inline-block;
 
 #content .member-item {
     float: left;
-    width: 33.333333%;
+    width: 33.33333%;
     text-align: center;
     
 }
@@ -264,7 +269,7 @@ background-color: #000;
 .place-body {
     background-color: #fff;
     padding: 22px 8px;
-    width: 92%;
+   
     margin-left: 11px;
     font-size: 15px;
     padding-left: 20px;
@@ -402,7 +407,7 @@ background-color: #000;
     padding-right: 8px;
 }
 .col-thirh {
-    width: 33.333333%;
+    width: 33.33333%;
 }
 .col-haft {
     width:50%;
@@ -427,3 +432,72 @@ background-color: #000;
     float: right;
 }
 
+
+@media (min-width : 1024px) {
+    .place-body {
+        width: 92%;
+    }
+    .places-list .place-imgg {
+        width: 100%;
+    padding: 0 11px;
+    display: block;
+
+    }
+}
+@media (min-width : 740px) and (max-width:1024px) {
+    #content .about-text {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .tickes-list {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .places-list {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .place-body {
+    width: 91%;
+    }
+    .places-list {
+        margin-right: -11px;
+      
+    }
+    .places-list .place-item {
+        padding: 7px;
+        width: 33.33333%;
+    }
+    .places-list .place-img {
+        
+        
+    }
+    
+}
+@media (max-width:740px) {
+    #nav > li {
+
+        display: block ;
+    }
+    #header .search-btn {
+        display:none;
+    }
+    .menu-btn {
+            float: left;
+    }
+    #header .menu-btn{
+        float: right;
+    }
+    #header .menu-icon {
+            color: white;
+            font-size: 20px;
+            line-height: 46px;
+            padding:0 21px;
+            cursor: pointer;
+    }
+    #header .menu-icon:hover {
+        background-color:  #ccc;
+        color: #000;
+        display: inline-block;
+    }
+}

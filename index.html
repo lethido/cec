@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <div id="main">
+<div id="main"> 
     <div id="header">
       <ul id="nav">
           <li><a href="#">home</a></li>
@@ -29,8 +29,11 @@
             </li>
       </ul>
       <!-- -->
-      <div class="search-btn">
+      <div  class="search-btn">
           <i class="search-icon ti-search"></i>
+      </div>
+      <div id="mobile-menu" class="menu-btn">
+          <i class="menu-icon ti-menu"></i>
       </div>
     </div>
     
@@ -79,7 +82,7 @@
                 </ul>
                 <div class="places-list">
                     <div class="place-item">
-                        <img src="./anh/meme.jpg" alt="new york" class="place-img">
+                        <img src="./anh/meme.jpg" alt="new york" class="place-img" id="anh-con-dog">
                        <div class="place-body">
                            <h2 class="place-heading">New York</h2>
                            <p class="place-time">Đầu Tháng</p>
@@ -157,6 +160,19 @@
         </div>
         <p class="coppy-right">Được code bởi <a href="">Lê Thị Đỏ</a></p>
     </div>
-    </div>
+    
+    <script>    
+    var header = document.getElementById('header');
+    var mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu.onclick = function () {
+        var isClosed= header.clientHeight === 46;
+        if (isClosed) {
+            header.style.height= 'auto'
+            
+        }
+        else {header.style.height = '46px'}
+    }
+    //mobile-menu
+    </script>
 </body>
 </html>
