@@ -540,4 +540,7 @@ background-color: #000;
     #content .member-img {
         width: 325px;
     }
+    #slider .text-content {
+        bottom: 9px;
+    }
 }
